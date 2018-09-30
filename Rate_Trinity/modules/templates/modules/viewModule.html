@@ -1,0 +1,17 @@
+{% extends "home/header.html" %}
+
+{% block content %}
+
+    <div class="title">
+        <h5>{{ module.code }}: {{ module.name }}</h5>
+        <h6>Lecturer: {{ module.lecturer}}</h6>
+        <h6>ECTS: {{module.ects}}</h6>
+    </div>
+    
+    <hr>
+    
+    <div class="comments">
+        <h5>Comments:</h5>
+        <p><i>--Comments will got here--</i></p>
+    </div>
+{% endblock  %}
