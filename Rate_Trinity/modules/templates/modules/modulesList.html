@@ -3,8 +3,9 @@
 {% block content %}
     <h2>Modules</h2>
     <p>Please search our list of modules</p>
-
-    {% for module in object_list %}
-        <a href="/modules/{{module.id}}">{{ module.code }} : {{ module.name }}</a>
-    {% endfor %}
+    <ul>
+        {% for module in object_list %}
+            <li><a href="/modules/{{module.id}}">{{ module.code }} : {{ module.name }}</a></li>
+        {% endfor %}
+    </ul>
 {% endblock %}
