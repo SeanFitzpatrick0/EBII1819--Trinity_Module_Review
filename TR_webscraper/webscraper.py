@@ -1,6 +1,7 @@
 #Imports===========================================
 import requests
 import time
+import re
 import pandas as pd
 from bs4 import BeautifulSoup
 
@@ -43,12 +44,32 @@ on that page.
 
 for key, value in links.items():
     r = requests.get(value)
+    if(r is None):
+        print('ERRROR: request failed')
+        break
     data = r.text
     #Not in correct format
     if('For information on modules and courses please see' in data):
         print('Error %s modules are not in the correct format.' % (key))
     else:
-        print(key)
+        soup = BeautifulSoup(data, 'html.parser')
+        for table in soup.find_all('table'):
+            if('ECTS credits' in table.text):
+                #Get code & name
+                moduleData = table.find_all('tr')[1].find_all('td')
+                item = moduleData[0].text
+                item = re.search(r'\((.*)\)', item).group(1)
+                item = re.sub(r'[\(\)]', ' ', item)
+                item = re.sub(r'  ', ' ', item).strip()
+
+                code = item.split(' ')[-1]
+                name = re.sub(code, '', item).strip()
+                
+                #Get ECTS
+                ects = re.search(r'\d{1,2}', moduleData[1].text).group(0)
+                
+                print('Code: %s, Name: %s, ECTS: %s' % (code, name, ects))
+
 
 print('--- Collecting Module data {0:3.1f} seconds ---'.format((time.time() - link_time)))
 
