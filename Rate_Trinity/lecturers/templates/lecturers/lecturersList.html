@@ -4,5 +4,9 @@
     <h2>Lecturers</h2>
     <p>Please search our list of lecturers</p>
     <hr/>
-    <p><i>--List here--</i></p>
+    <ul>
+        {% for lecturer in object_list %}
+            <li><a href="/lecturers/{{lecturer.pk}}">{{ lecturer.name }} : {{ lecturer.school }}</a></li>
+        {% endfor %}
+    </ul>
 {% endblock %}
