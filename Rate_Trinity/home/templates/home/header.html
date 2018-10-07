@@ -9,10 +9,10 @@
 
     <body>
         <nav>
-            <a href="/">Home</a>
-            <a href="/modules/">Modules</a>
-            <a href="/lecturers/">Lecturers</a>
-            <a href="/about/">About</a>
+            <a href="{% url 'homepage' %}">Home</a>
+            <a href="{% url 'module_list' %}">Modules</a>
+            <a href="{% url 'lecturer_list' %}">Lecturers</a>
+            <a href="{% url 'about' %}">About</a>
         </nav>
         <div>
         {% block content %}
