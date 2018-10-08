@@ -1,6 +1,8 @@
 {% extends "home/header.html" %}
-
+<html>
 {% block content %}
+<div>
+  <hr>
   	   <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm h-md-250">
@@ -10,9 +12,8 @@
                 <a class="text-dark">{{ module.code }}: {{ module.name }}</a>
               </h3>
               <hr>
-              <h6>Lecturer: {{ module.lecturer}}</h6>
-              <hr>
-              <h6>ECTS: {{module.ects}}</h6>
+              <h5>Lecturer: {{ module.lecturer}}</h5>
+              <h5>ECTS: {{module.ects}}</h5>
             </div>
           </div>
         </div>
@@ -21,7 +22,7 @@
           <div class="card flex-md-row mb-4 shadow-sm h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <h3 class="mb-0">
-                <a class="text-dark">Comment section for {{ module.code }}: {{ module.name }}</a>
+                <a class="text-dark">Comment section:</a>
               </h3>
               <hr>
               <h6>----Comments go here----</h6>
@@ -31,13 +32,14 @@
           </div>
         </div>
       </div>
+      <hr>
       <div class="row mb-2">
        <div class="col-md-6">
          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
            <div class="card-body d-flex flex-column align-items-start">
 
              <h3 class="mb-0">
-               <a class="text-dark">Course Descriptor</a>
+               <a class="text-dark">Course Descriptor:</a>
              </h3>
              <hr>
              <p>{{ module.description }}</p>
@@ -48,16 +50,15 @@
          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
            <div class="card-body d-flex flex-column align-items-start">
              <h3 class="mb-0">
-              <a class="text-dark">Have your say on {{ module.code }}: {{ module.name }}</a>
+              <a class="text-dark">Have your say!</a>
              </h3>
              <hr>
-             <input></input>
-
+             <textarea class="form-control" rows="7" id="comment"></textarea>
            </div>
          </div>
        </div>
      </div>
+</div>
 
-
-
+</html>
 {% endblock  %}
