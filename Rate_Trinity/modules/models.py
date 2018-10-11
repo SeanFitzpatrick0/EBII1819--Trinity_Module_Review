@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from lecturers.models import Lecturer
+from django.contrib.auth.models import User
 
 DEFAULT_LECTURER_ID = 1
 
@@ -12,4 +13,12 @@ class Module(models.Model):
     ects = models.PositiveIntegerField('The ECTS provided on completion of the module', validators=[MinValueValidator(5), MaxValueValidator(20)])
 
     def __str__(self):
-        return "%s : %s" % (self.code, self.name) 
+        return "%s : %s" % (self.code, self.name)
+
+class Module_Comment(models.Model):
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    subject = models.ForeignKey(Module, on_delete=models.CASCADE)
+    content = models.TextField(max_length=500)
+
+    def __str__(self):
+        return 'Author:\tSubject:%s' % (self.subject.name)
