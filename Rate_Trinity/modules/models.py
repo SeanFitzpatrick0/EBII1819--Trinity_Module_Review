@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from lecturers.models import Lecturer
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 DEFAULT_LECTURER_ID = 1
 
@@ -18,7 +19,8 @@ class Module(models.Model):
 class Module_Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     subject = models.ForeignKey(Module, on_delete=models.CASCADE)
+    date_posted = models.DateField(default=timezone.now)
     content = models.TextField(max_length=500)
 
     def __str__(self):
-        return 'Author:\tSubject:%s' % (self.subject.name)
+        return 'Author: %s,\tSubject: %s' % (self.author, self.subject.name)
