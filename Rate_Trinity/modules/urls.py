@@ -10,7 +10,7 @@ class ModuleDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['comments'] = Module_Comment.objects.all()
+        context['comments'] = Module_Comment.objects.filter(subject_id=context['module'].pk)
         return context
 
 urlpatterns = [
