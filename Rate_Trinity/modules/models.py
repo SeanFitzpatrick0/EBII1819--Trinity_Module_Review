@@ -19,7 +19,7 @@ class Module(models.Model):
 class Module_Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     subject = models.ForeignKey(Module, on_delete=models.CASCADE)
-    date_posted = models.DateField(default=timezone.now)
+    date_posted = models.DateTimeField(default=timezone.now)
     content = models.TextField(max_length=500)
 
     def __str__(self):

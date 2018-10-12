@@ -26,7 +26,10 @@
               </h3>
               <hr>
               {% for comment in comments %}
-                <h6>{{ comment.content }}</h6>
+                <div>
+                  <h6>{{ comment.content }}</h6>
+                  <p>{{ comment.date_posted | date:"M d, Y"}}</p>
+                </div>
               {% endfor %}
             </div>
           </div>
