@@ -1,0 +1,20 @@
+{% extends "home/header.html" %}
+{% block content %}
+    <h1>Register</h1>
+    <!--TODO link this to sign in page when made            V-->
+    <small>If you already have and acount, sign in <a href="#">Here</a></small>
+    <hr/>
+    <!-- 
+        CSRF Token: (Cross Site Request Forgery) Protects form against certain attacks.
+        Django requires this for all forms.
+        TODO lookup
+    -->
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Join Today!</legend>
+            {{ form.as_p }}
+            <button type="submit">Sign Up</button>
+        </fieldset>
+    </form>
+{% endblock %}
