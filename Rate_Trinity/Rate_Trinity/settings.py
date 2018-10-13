@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'about',
     'modules',
     'lecturers',
+    'users',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
