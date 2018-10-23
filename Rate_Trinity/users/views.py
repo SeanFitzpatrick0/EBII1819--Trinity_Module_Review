@@ -8,8 +8,8 @@ def register(request):
         if form.is_valid():
             form.save()
             userName = form.cleaned_data.get('username')
-            messages.success(request, f'Account succesfully created for { userName }.')
-            return redirect('homepage')
+            messages.success(request, f'Account succesfully created for { userName }. Please Login')
+            return redirect('login_page')
         else: 
             error_message = ''
             feilds_errors = [ (field.label, field.errors) for field in form]

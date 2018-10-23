@@ -1,0 +1,16 @@
+{% extends "home/header.html" %}
+{% block content %}
+    <h1>Log In</h1>
+
+    <small>If you don't already have and acount, Register <a href="{% url 'register_page' %}">Here</a></small>
+    <hr/>
+
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Sign In!</legend>
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+{% endblock %}
