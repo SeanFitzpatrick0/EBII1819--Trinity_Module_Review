@@ -27,6 +27,7 @@
         <a class="nav-item nav-link" href="{% url 'about' %}">about</a>
         <!--TODO Make these links look different to the other ones-->
         {% if user.is_authenticated %}
+          <a href="{% url 'profile_page' %}">Profile</a>
           <a href="{% url 'logout_page' %}">Log out</a>
         {% else %}
           <a href="{% url 'register_page' %}">Register</a>
