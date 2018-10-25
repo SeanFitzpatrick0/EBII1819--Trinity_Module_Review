@@ -27,10 +27,10 @@ class Module_Comment(models.Model):
 
 
 class Module_Rating(models.Model):
-    module = models.ForeignKey(Module,primary_key=True, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    module = models.ForeignKey(Module, on_delete=models.CASCADE)
+    users = models.OneToManyField(User, on_delete=models.CASCADE)
     mesurement_title = models.CharField("Module Rating Title eg Usefulness", max_length=50)
-    rating_value = models.PositiveIntegerField(min_value=0,max_value=5)
+    rating_value = models.PositiveIntegerField('Ratings', validators=[MinValueValidator(0), MaxValueValidator(5)])
 
     def __str__(self):
         return 'Module: %s,\tUser: %s' % (self.module, self.user)
