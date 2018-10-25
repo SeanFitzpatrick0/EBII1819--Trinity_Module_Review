@@ -33,4 +33,4 @@ class Module_Rating(models.Model):
     rating_value = models.PositiveIntegerField('Ratings', validators=[MinValueValidator(0), MaxValueValidator(5)])
 
     def __str__(self):
-        return 'Module: %s,\t User: %s' % (self.module, self.user)
+        return 'Rating: %d' % (self.rating_value)
