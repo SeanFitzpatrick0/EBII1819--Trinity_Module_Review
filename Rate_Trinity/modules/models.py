@@ -24,3 +24,13 @@ class Module_Comment(models.Model):
 
     def __str__(self):
         return 'Author: %s,\tSubject: %s' % (self.author, self.subject.name)
+
+
+class Module_Rating(models.Model):
+    module = models.ForeignKey(Module, on_delete=models.CASCADE)
+    users = models.ManyToManyField(User)
+    mesurement_title = models.CharField("Module Rating Title eg Usefulness", max_length=50)
+    rating_value = models.PositiveIntegerField('Ratings', validators=[MinValueValidator(0), MaxValueValidator(5)])
+
+    def __str__(self):
+        return 'Rating: %d' % (self.rating_value)
