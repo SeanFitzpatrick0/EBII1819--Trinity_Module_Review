@@ -1,4 +1,5 @@
 {% extends "home/header.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
     <h1>Log In</h1>
 
@@ -9,7 +10,7 @@
         {% csrf_token %}
         <fieldset>
             <legend>Sign In!</legend>
-            {{ form.as_p }}
+            {{ form | crispy }}
             <button type="submit">Login</button>
         </fieldset>
     </form>

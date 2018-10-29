@@ -1,4 +1,5 @@
 {% extends "home/header.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
     <h1>Register</h1>
     <small>If you already have and acount, sign in <a href="{% url 'login_page' %}">Here</a></small>
@@ -12,7 +13,7 @@
         {% csrf_token %}
         <fieldset>
             <legend>Join Today!</legend>
-            {{ form.as_p }}
+            {{ form | crispy }}
             <button type="submit">Sign Up</button>
         </fieldset>
     </form>
