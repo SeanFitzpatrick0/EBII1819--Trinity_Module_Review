@@ -23,7 +23,7 @@ class Module_Comment(models.Model):
     content = models.TextField(max_length=500)
 
     def __str__(self):
-        return 'Author: %s,\tSubject: %s' % (self.author, self.subject.name)
+        return 'Author: %s,\tSubject: %s, Content:%s' % (self.author, self.subject.name, self.content[0:50])
 
 
 class Module_Rating(models.Model):
