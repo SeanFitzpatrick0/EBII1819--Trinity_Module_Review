@@ -20,6 +20,8 @@ class ModuleDetailView(DetailView):
 
     def post(self, request, *args, **kwargs):
         form = self.form_class(request.POST)
+        form.instance.author = self.request.user
+        form.instance.subject = Module.objects.get(pk=kwargs['pk'])
         if form.is_valid():
             form.save()
             print('Valid Form')
