@@ -24,7 +24,6 @@ class ModuleDetailView(DetailView):
         form.instance.subject = Module.objects.get(pk=kwargs['pk'])
         if form.is_valid():
             form.save()
-            print('Valid Form')
 
         form = self.form_class
         return redirect('module_view', kwargs['pk'])
