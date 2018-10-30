@@ -6,7 +6,7 @@
     <hr/>
     <ul>
         {% for module in object_list %}
-            <li><a href="/modules/{{module.pk}}">{{ module.code }} : {{ module.name }}</a></li>
+            <li><a href="{{module.code}}/">{{ module.code }} : {{ module.name }}</a></li>
         {% endfor %}
     </ul>
 {% endblock %}
