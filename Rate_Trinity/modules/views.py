@@ -25,7 +25,8 @@ class ModuleDetailView(DetailView):
         form.instance.author = self.request.user
         form.instance.subject = Module.objects.get(pk=kwargs['pk'])
         if form.is_valid():
-            form.save()
+            comment = form.save()
+            request.user.profile.comments.add(comment)
 
         form = self.form_class
         return redirect('module_view', kwargs['pk'])
