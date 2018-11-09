@@ -52,11 +52,21 @@
        <div class="col-md-6">
          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
            <div class="card-body d-flex flex-column align-items-start">
+             <!--
              <h3 class="mb-0">
               <a class="text-dark">Have your say!</a>
              </h3>
              <hr>
              <textarea class="form-control" rows="7" id="comment"></textarea>
+            -->
+            <form method="POST">
+                {% csrf_token %}
+              <fieldset>
+                <legend><h3 class="mb-0">Have your say!</h3></legend>
+                {{form}}
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
            </div>
          </div>
        </div>

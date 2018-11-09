@@ -5,26 +5,57 @@
   <title>Rate Trinity</title>
   <meta charset="utf-8" />
   {% load staticfiles %}
+  <link rel="stylesheet" href="header.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+  <!--
+  FAVICON CODE
+  -->
+  <link rel="icon"
+      type="image/png"
+      href="https://static1.squarespace.com/static/56224101e4b0bca6fa58369a/t/5622446fe4b01226f10d8de4/favicon.ico" />
 </head>
 
-<body>
+<body style = "margin-bottom:50px;">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a>
-    <a class="navbar-brand" href="/"> <img src = "https://www.tcd.ie/library/assets/img/TCD-crest/white-stacked-trinity.png" width = "120" height ="75">Trinity Module Review</a>
+    <a class="navbar-brand" href="{% url 'homepage' %}">
+      <img src = "https://www.tcd.ie/library/assets/img/TCD-crest/white-stacked-trinity.png" width = "120" height ="75">
+      Trinity Module Review
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
         <a class="nav-item nav-link" href="{% url 'homepage' %}">Home</a>
-          <a class="nav-item nav-link" href="{% url 'module_list' %}">Modules</a>
+        <a class="nav-item nav-link" href="{% url 'module_list' %}">Modules</a>
         <a class="nav-item nav-link" href="{% url 'lecturers_list' %}">Lecturers</a>
-        <a class="nav-item nav-link" href="{% url 'about' %}">about</a>
+        <a class="nav-item nav-link" href="{% url 'about' %}" style = "padding-right:75px">About</a>
+        <!--TODO Make these links look different to the other ones-->
+          {% if user.is_authenticated %}
+          <a class="nav-item nav-link" href="{% url 'profile_page' %}" style="color:white">
+            <i class="far fa-user"></i>
+            Profile
+          </a>
+          <a class="nav-item nav-link" href="{% url 'logout_page' %}" style="color:white">
+            <i class="fas fa-sign-out-alt"></i>
+            Log out
+          </a>
+          {% else %}
+          <a class="nav-item nav-link" href="{% url 'register_page' %}" style="color:white">
+            <i class="fas fa-user-plus"></i>
+            Register
+          </a>
+          <a class="nav-item nav-link" href="{% url 'login_page' %}" style="color:white">
+            <i class="fas fa-sign-in-alt"></i>
+            Log in
+          </a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </nav>
@@ -32,12 +63,15 @@
     {% if messages %}
       {% for message in messages %}
         <div class='alert alert-{{ message.tags }}'>
-          {{ message }}
+          {{ message| safe }}
         </div>
       {% endfor %}
     {% endif %}
     {% block content %}
     {% endblock %}
+    <div class="footer" style="color:white; position: fixed;  right: 0; bottom: 0;  left: 0;  height:50px;  background-color:  #343c44; text-align: center;">
+      <p style="padding-top:12px;">© © © Trinity Module Review Official Website © © © </p>
+    </div>
   </div>
-</body>
+  </body>
 </html>

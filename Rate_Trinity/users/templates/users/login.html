@@ -1,0 +1,21 @@
+{% extends "home/header.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class ="container" style="padding-right:20px; padding-top:30px; padding-bottom: 10px;">
+    <h1 style="padding-bottom:15px;">Log In</h1>
+
+
+    <small>If you don't already have and acount, Register <a href="{% url 'register_page' %}">Here</a></small>
+    </div>
+    <hr/>
+    <div class ="container" style="padding-right:20px; padding-bottom:60px">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset>
+            <legend>Sign In!</legend>
+            {{ form | crispy }}
+            <button type="submit" class="btn btn-info">Login</button>
+        </fieldset>
+    </form>
+    </div>
+{% endblock %}
