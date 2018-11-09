@@ -15,10 +15,10 @@ print('--- {0:3.1f} seconds ---'.format((time.time() - start_time)))
 #===============================================================================
 '''
 1st: Gather all the links to the different schools module descriptor pages
-From the TCD module directory (https://www.tcd.ie/students/orientation/visiting-exchange/module-directory/) 
+From the TCD module directory (https://www.tcd.ie/itservices/email/kb/modules.php?fbclid=IwAR3l0ULSE7tBORsoS29efSkzoeAx1ZdrrQNrZN4Cp1ykq0190kYnpwivYig) 
 '''
 #Enter a website to extract the URL's from:
-url = 'https://' + 'www.tcd.ie/students/orientation/visiting-exchange/module-directory/' 
+url = 'https://' + 'www.tcd.ie/itservices/email/kb/modules.php?fbclid=IwAR3l0ULSE7tBORsoS29efSkzoeAx1ZdrrQNrZN4Cp1ykq0190kYnpwivYig' 
 r  = requests.get(url)
 data = r.text
 soup = BeautifulSoup(data, 'html.parser')
