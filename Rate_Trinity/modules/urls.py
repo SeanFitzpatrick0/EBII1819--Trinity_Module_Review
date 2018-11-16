@@ -7,5 +7,5 @@ from .views import ModuleDetailView
 urlpatterns = [
     url(r'^$', ListView.as_view(queryset=Module.objects.all().order_by('code'),
                                 template_name='modules/modulesList.html'), name='module_list'),
-    url(r'^(?P<pk>.+)/|$', ModuleDetailView.as_view(), name='module_view')
+    url(r'^(?P<pk>\w+?)/$', ModuleDetailView.as_view(), name='module_view')
 ]

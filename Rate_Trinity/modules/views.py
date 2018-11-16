@@ -19,12 +19,14 @@ class ModuleDetailView(DetailView):
         return context
 
     def post(self, request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            return redirect('login_page')
         form = self.form_class(request.POST)
         form.instance.author = self.request.user
         form.instance.subject = Module.objects.get(pk=kwargs['pk'])
         if form.is_valid():
-            form.save()
-            print('Valid Form')
+            comment = form.save()
+            request.user.profile.comments.add(comment)
 
         form = self.form_class
         return redirect('module_view', kwargs['pk'])
