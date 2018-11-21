@@ -1,7 +1,29 @@
 
 from hatesonar import Sonar
 import json
+class MessageScreenerResult :
+    result = False
+    hate = 0
+    offence =0
+    tips = ""
 
+    def __init__(self,result, hate, offence,tips):
+        self.result = result
+        self.hate = hate
+        self.offence = offence
+        self.tips = tips
+
+    def getHate(self) :
+        return self.hate
+
+    def getTips(self) :
+        return self.tips
+
+    def getOffence(self) :
+        return self.offence
+
+    def getResult(self) :
+        return self.result
 
 
 def isAbusiveComment(x):
@@ -25,23 +47,25 @@ def isAbusiveComment(x):
             offenseConfidence = result['confidence']
         if result["class_name"] == "neither" :
             neitherConfidence = result['confidence']
+    print("Hate ",hateConfidence, " || offenseConfidence ",offenseConfidence," || neither ",neitherConfidence)
 
+    rez = False
     if neitherConfidence > 0.7:
-        return False
+        rez = False
 
     if hateConfidence > 0.4 and offenseConfidence >0.4 :
-        return True
+        rez = True
 
-    if hateConfidence > 0.6 and offenseConfidence >0.3 :
-        return True
+    if hateConfidence > 0.5 and offenseConfidence >0.3 :
+        rez = True
 
     if hateConfidence > 0.7 :
-        return True
+        rez = True
 
-    if offenseConfidence >0.6 :
-        return True
+    if offenseConfidence >0.3 :
+        rez = True
 
-    return False
-    #print("Hate ",hateConfidence, " || offenseConfidence ",offenseConfidence," || neither ",neitherConfidence)
+    return MessageScreenerResult(rez,hateConfidence,offenseConfidence,"No Tips, Sorry!")
 
-print(isAbusiveComment("hey"))
+
+print(isAbusiveComment("WHAT A PRICK").getResult())
