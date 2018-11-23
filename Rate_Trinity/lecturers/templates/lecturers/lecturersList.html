@@ -1,12 +1,12 @@
 {% extends "home/header.html" %}
 
 {% block content %}
-    <h2>Lecturers</h2>
-    <p>Please search our list of lecturers</p>
+    <h2 style = "margin-left: 40px">Lecturers</h2>
+    <p style = "margin-left: 40px">Please search through our list of lecturers</p>
     <hr/>
     <ul>
         {% for lecturer in object_list %}
-            <li><a href="/lecturers/{{lecturer.pk}}">{{ lecturer.name }} : {{ lecturer.school }}</a></li>
+            <menu style="font-size: 15px; margin-right: 100px;" class="list-group-item"><a href="/lecturers/{{lecturer.pk}}">{{ lecturer.name }} : {{ lecturer.school }}</a></menu>
         {% endfor %}
     </ul>
 {% endblock %}
