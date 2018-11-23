@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from modules.models import Module, Module_Comment
 from django.views.generic import ListView, DetailView
 from .forms import Module_Comment_Form
+from ML_API import ml
 
 def index(request):
     return render(request, 'modules/modulesList.html')
@@ -21,6 +22,9 @@ class ModuleDetailView(DetailView):
     def post(self, request, *args, **kwargs):
         if not request.user.is_authenticated:
             return redirect('login_page')
+        
+        print(ml.isAbusiveComment('What a prick'))
+
         form = self.form_class(request.POST)
         form.instance.author = self.request.user
         form.instance.subject = Module.objects.get(pk=kwargs['pk'])

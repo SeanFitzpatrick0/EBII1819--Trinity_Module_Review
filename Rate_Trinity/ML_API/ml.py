@@ -1,4 +1,3 @@
-
 from hatesonar import Sonar
 import json
 class MessageScreenerResult :
@@ -47,7 +46,7 @@ def isAbusiveComment(x):
             offenseConfidence = result['confidence']
         if result["class_name"] == "neither" :
             neitherConfidence = result['confidence']
-    print("Hate ",hateConfidence, " || offenseConfidence ",offenseConfidence," || neither ",neitherConfidence)
+    #print("Hate ",hateConfidence, " || offenseConfidence ",offenseConfidence," || neither ",neitherConfidence)
 
     rez = False
     if neitherConfidence > 0.7:
@@ -67,5 +66,5 @@ def isAbusiveComment(x):
 
     return MessageScreenerResult(rez,hateConfidence,offenseConfidence,"No Tips, Sorry!")
 
-
-print(isAbusiveComment("WHAT A PRICK").getResult())
+if __name__ == "__main__":
+    print(isAbusiveComment("WHAT A PRICK").getResult())
