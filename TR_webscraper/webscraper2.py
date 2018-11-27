@@ -32,8 +32,16 @@ del codes[3253]
 del names[-1]
 
 df = pd.DataFrame(
-    {'Code': codes,
-     'Name': names
+    {'code': codes,
+     'name': names,
     })
+df['lecturer'] = df['code']
+df['description'] = df['code']
+df['ects'] = 0
+print(df)
 
-df.to_csv('ModuleData(Codes_Names).csv', header=False, index=False)
+#Clean data
+#remove unwanted char
+df['name'] = df['name'].str.replace(r'[^a-zA-Z0-9, ]','').str.strip()
+
+df.to_csv('ModuleData(Codes_Names).csv', index=False)

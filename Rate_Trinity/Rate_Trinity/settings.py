@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'lecturers',
     'users',
     'crispy_forms',
+    'import_export',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,3 +134,4 @@ STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_URL = 'login_page'
 LOGIN_REDIRECT_URL = 'homepage'
+IMPORT_EXPORT_USE_TRANSACTIONS = True
