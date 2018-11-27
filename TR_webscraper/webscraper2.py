@@ -22,16 +22,18 @@ url = 'https://' + 'www.tcd.ie/itservices/email/kb/modules.php?fbclid=IwAR2_sfkI
 r  = requests.get(url)
 data = r.text
 soup = BeautifulSoup(data, 'html.parser')
-table = soup.find('table')
-tableText = table.text.replace('\n\n', '\n')
-print(tableText.split('\n'))
-'''
-for row in tableText.split('\n'):
-    print(row) 
 
-    #print('Code: %s, Name: %s, ECTS: %s' % (code, name, ects))
-'''
+#==========TEST================
+codes = re.findall(r'<td width="193">(.*)<\/td>', data)[0: -1]
+names = re.findall(r'<td>(.*)<\/td>', data)
 
-#print('--- Collecting Module data {0:3.1f} seconds ---'.format((time.time() - link_time)))
+#Remove error in data
+del codes[3253]
+del names[-1]
 
-print('Finished\tTotal Time:{0:3.1f} seconds'.format((time.time() - start_time)))
+df = pd.DataFrame(
+    {'Code': codes,
+     'Name': names
+    })
+
+df.to_csv('ModuleData(Codes_Names).csv', header=False, index=False)
