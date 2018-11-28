@@ -60,13 +60,14 @@ def module_csv_upload(request):
     #Read data
     for column in csv.reader(io_string, delimiter=','):
         try:
+            print(column)
             _, created = Module.objects.update_or_create(
                 code=column[0],
                 name=column[1],
+                lecturer=column[2],
                 description=column[3],
                 ects=column[4]
             )
         except:
-            print('Error while adding ' + str(column))
-
+           print('Error while adding ' + str(column))
     return render(request, template)
