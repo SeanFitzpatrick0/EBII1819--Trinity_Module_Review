@@ -1,0 +1,29 @@
+Business.csv
+Creative Arts(Drama_Film_and_Music).csv
+Education.csv
+English.csv
+Histories_and_Humanities.csv
+Languages_Literatures_and_Cultural_Studies.csv
+Linguistic_Speech_and_Communication_Sciences.csv
+Law.csv
+Multi-School.csv
+Psychology.csv
+Confederal_School_of_Religions_Peace_Studies_and_Theology.csv
+Social_Sciences_and_Philosophy.csv
+Social_Work_and_Social_Policy.csv
+Biochemistry_and_Immunology.csv
+Chemistry.csv
+Computer_Science_and_Statistics.csv
+Engineering.csv
+Genetics_and_Microbiology.csv
+Mathematics.csv
+Multi-School.csv
+Natural_Sciences.csv
+Physics.csv
+Dental_Science.csv
+Medicine.csv
+Multi-School.csv
+Nursing_and_Midwifery.csv
+Pharmacy _and_Pharmaceutical_Sciences.csv
+Innovation_Academy.csv
+Multi-School.csv
