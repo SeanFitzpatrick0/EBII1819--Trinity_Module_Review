@@ -1,0 +1,829 @@
+code,name,lecturer,description,ects
+PY1T10,Physics For Theoretical Physics,E.C. Finch,"Learning Outcomes:
+On successful completion of this module, the students will be able to:
+' Express relativistic effects concerning the motion of a body, as observed in different inertial reference frames.
+' Describe wave motion and relate it to basic phenomena in light and sound.
+' Sketch how astronomy provides a basic description of the universe.
+' Prepare a brief report, which includes an error analysis, of a simple physical experiment.
+Module Learning Aims:
+Module Content:
+1. What is Physics?: An introduction to the School of Physics and the subject.
+
+2. Special Relativity:
+
+Galilean transformations, Michelson-Morley experiment. Lorentz transformations, time dilation, length contraction, simultaneity.
+
+Doppler effect.
+
+Transformation of velocities and forces.
+
+Relativistic dynamics.
+
+Pair creation, fission, fusion.
+
+Collisions.
+
+Compton effect.
+
+Relativity and electromagnetism.
+
+3.Hearing and Seeing:
+
+Resonance, harmonic oscillators, SHM, frequency.
+
+Waves: standing, travelling, wavelength, wave velocity.
+
+Sound: music, vibrations of a string and of a column of air, harmonics, Doppler effect.
+
+Light: Rayleigh scattering, refraction, reflection, dispersion, index of refraction, polarization, polarized reflection, Malus' law, birefringence, total internal reflection, colour vision, gas discharges, lasers.
+
+Optics: refracting optics, lenses, real images, focus, focal length, f-numbers, lens equation, cameras, reflecting optics, curved mirrors, telescopes.
+
+Interference: superposition of waves, beating, 2 beam interference, anti-reflection coating.
+
+Diffraction: Huygen's principle, diffraction by a slit and grating, X-ray diffraction.
+
+4. Astronomy and Astrophysics:
+
+Denizens of our solar system;
+
+making stars and planets;
+
+creating the elements;
+
+the case of the missing matter.
+",10
+PY1T20,Physics For Theoretical Physics,G. Cross,"Learning Outcomes:
+On successful completion of this module students should be able to:
+
+Describe key experimental observations underpinning electricity and magnetism.
+
+Demonstrate how the properties of matter can be described in terms of state variables, such as pressure and temperature.
+
+Describe the important paradigm shifts that occurred within physics at the end of the 19th century and that still carry on through to 21st century physics
+
+Interpret the data obtained in a simple physical experiment by applying a numerical data analysis.
+Module Learning Aims:
+Module Content:
+1. The Material World:
+
+Phases of matter and phase transitions.
+
+Solids: stress, strain, elastic and plastic deformations, crystal structure, glass, plastics.
+
+Fluids: pressure, density, Archimedes' principle, surface tension, hydrodynamics, Bernoulli's equation, viscosity, laminar and turbulent flow.
+
+Gases: gas laws, kinetic theory, PVT diagrams.
+
+Heat and thermodynamics: thermal energy, heat, temperature, thermal expansion, conduction, convection, radiation, Stefan-Boltzmann law, laws of thermodynamics, heat engines.
+
+2. Electromagnetic Interactions:
+
+Electrostatics: electric charge, Coulomb's law, electric field, Gauss's law, electric potential energy, voltage, electric polarization, capacitance.
+
+Electricity: current, resistance, Ohm's law, electromotive force, power in electric circuits, Kirchoff's laws, RC circuits.
+
+Magnetism: magnetic pole, magnetostatic forces, magnetic fields, magnetic domains.
+
+Electromagnetism: force on a moving charge, magnetic torque, electric motors - DC and AC, field due to a moving charge, force between conductors.
+
+Electromagnetic induction: Faraday's law, Lenz's law.
+
+3. Origin of Modern Physics:
+
+The existence of atoms.
+
+Fingerprints of matter: spectra.
+
+The nature of light.
+
+The discovery of x-rays and electrons
+
+Models of the atom.
+
+Divisibility of atoms: radioactivity.
+",10
+PY2T10,Classical Physics For Theoretical Physics,C. Patterson,"Learning Outcomes:
+On successful completion of this module, the students will be able to:
+' Describe how classical physics is underpinned by wave optics and thermodynamics.
+' Solve basic problems in relation to harmonic oscillators.
+' Relate the concept of oscillations to optical properties of matter.
+' Employ web-based research techniques in a small group project and present the results in form of a poster.
+' Prepare an extensive report detailing methodology, data gathering and interpretation of a physical experiment.
+Module Learning Aims:
+Module Content:
+1. Oscillations: Review of simple harmonic motion. Forced and damped oscillations. Resonance. Two coupled oscillators, modes and normal coordinates. Many coupled oscillators. Transition to continuous systems. Waves. Nonlinear behaviour. Anharmonic behaviour.
+2. Physical Optics: IIntroduction: light as a wave. Plane waves. Light in matter: electron oscillator for a dielectric. Refractive index and dispersion. Optical properties of metals. Polarisation of light. Linear, circular and elliptical polarisation. Birefringence in uniaxial crystals. Polarisation components. Polarisation by reflection, scattering. Retarders and analysis of polarised light. Angular momentum of the photon. Interference and coherence - complex degree of coherence. Visibility of fringes, temporal coherence and spectral bandwidth, spatial coherence. Interference- wavefront and amplitude splitting interferometers, types and location of fringes, and applications of interferometry. Multiple beam interference. Fabry-Perot interferometer. Diffraction - near-field and far-field diffraction.
+3. Thermodynamics: First law of thermodynamics. Internal energy, heat and work. Reversible and irreversible processes. Specific heat. Second law of thermodynamics. Heat engines, Carnot cycles. Entropy. Probability and disorder. Combined first and second laws. Central equation. H, F, G. Maxwell's relations. Energy equations. Cooling processes. Joule-Kelvin effect. Third law of thermodynamics. Van der Waals model for real gases.
+4. Electricity and Magnetism: Coulomb's and Gauss' Laws; dipoles and polarisation; electric susceptibility and displacement vector; polar dielectrics and Langevin analysis; potential and electric energy density; Biot-Savart and Ampere's Laws; magnetic dipole and magnetisation; H vector; vector potential; magnetic energy density; dia, para and ferro magnetism; Faraday's law of electromagnetic induction; magnetoelectric induction; Maxwell's equations.
+",10
+PY2T20,Modern Physics For Theoretical Physics,B. Espey,"Learning Outcomes:
+On successful completion of this module, the students will be able to:
+' Describe how modern physics is underpinned by quantum and nuclear physics.
+' Explain the concepts of deterministic chaos and complexity in relation to dynamical systems..
+' Discuss the composition of the solar system and explain basic astronomical observations.
+' Prepare calculations and present in small groups.
+' Analyze, modify and run C language programs to perform computer experiments.
+Module Learning Aims:
+Module Content:
+1. Chaos and Complexity: Examples of chaotic systems, logistic map, period doubling, Feigenbaum numbers, Ljapunov exponent, phase portraits, iterated maps, fractals, self organised criticality, cellular automata dynamics of pedestrian motion.
+2. Quantum Physics: Origins of quantum physics. Black body radiation. Photoelectric effect. Compton Effect. De Broglie's Postulate. The Uncertainty Principle. Atomic spectra. Bohr model of the atom. Correspondence Principle. Steady-state Schrödinger equation. Particle in an infinite square well. Finite square well. Simple.
+3. Nuclear Physics: Scattering. Cross-sections. Rutherford scattering. Nuclear force. Nuclear binding. Nuclear masses. Mass defect. Mass dependence of binding energy per nucleon. Beta decay. Electron, positron emission. Electron capture. Decay chains. Alpha decay. Heavy element decay chains. Barrier penetration mechanism. Gamma decay. Radioactive decay law. Analysis of parent-daughter activity relationships. Nuclear fission. Liquid drop model. Fission products. Induced fission. Nuclear reactors. Neutron moderation. Control and delayed neutrons. Reactor types. Environmental and other concerns. Fuel cycle. Nuclear fusion. Fusion reactors.
+4. Observing the Universe: Basic astronomical definitions. The Earth and Moon in space; co-ordinate systems. The Sun and stars, basic stellar information (distance, luminosity, life cycle). The structure of our Galaxy and other galaxies, variable and exploding stars as 'standard candles' for measuring the distance of galaxies. Our place in the Universe; the origin and fate of the Universe.
+",10
+PY4T01,Condensed Matter Theory,S. Sanvito,"Learning Outcomes:
+On successful completion of this module the student will be able to
+' demonstrate knowledge of the foundations of solid state Physics in terms of non-interacting electrons
+' give a quantum mechanical description of the chemical bond for homonuclear and heteronuclear molecules,
+' describe the determination of simple band structure using the tight-binding method.
+' perform analytic calculations to solve elementary condensed matter related problems (simple molecule spectrum, band-structure of s-like 1D and 2D materials and of graphene)
+' formulate a model based on the concepts learnt to explain simple condensed matter phenomena (e.g. the Peirels distortion).
+Module Learning Aims:
+Module Content:
+What Hamiltonian? Born-Oppenheimer Approximation; Tight-binding method for molecules; From molecules to solid; Going from 1D to 2D and 3D; C-graphite and C-nanotubes; Interfaces: charge transfer and screening; A proper calculation: the Coulomb potential back; Density Functional Theory; Kohn-Sham equations; Electronic transport: Classical model; Quantum Transport; Transfer matrix theory; Disorder and localization.
+",5
+PY4T02,Electron And Photon Physics,J.M.D. Coey,"Learning Outcomes:
+On successful completion of this module, students should be able to:
+
+Describe the characteristic physical properties of a superconductor (zero resistance, Meissner effect, absence of electronic heat capacity, isotope effect)
+
+Relate the physical properties to underlying theoretical concepts, especially the energy gap, electron pairing and the two characteristic lengths
+
+Manipulate the Ginzburg-Landau expression for the free energy to reproduce the phase transition
+
+Describe the concept of a photon, and relate this to the mathematical treatment of the quantum-mechanical electromagnetic field
+
+Use this knowledge to calculate basic physical properties of the quantum-mechanical electromagnetic field
+
+Describe the theory of the interaction of quantized fields with atoms and solids
+Module Learning Aims:
+Module Content:
+Part I:Quantum theory of light:This course provides an introduction to the quantum theory of light and its physical consequences. Planck radiation law; Photon shot noise; Hamiltonian for the electromagnetic field; Classical and non-classical states of light; Light-matter coupling; Jaynes-Cummings model and Rabi oscillations.
+Part II: Metal Physics and Superconductivity: This course provides a basic account of the phenomena and theory of superconductivity and its applications, including high-Tc oxide superconductors. Resistivity of normal metals: impurity scattering, temperature dependence of resistivity due to electron-phonon scattering. Superconductivity: zero resistance, Meissner effect, thermodynamic treatment of the phase transition. Energy gap from specific heat and tunneling. Type I and II superconductors. Phenomenological Ginzburg-Landau theory. Penetration depth. Cooper pairs. Correlation length. Results of BCS theory Flux quantization, tunneling, ac and dc Josephson effects.
+",5
+PY4T03,Quantum Optics And Information,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PY4TP1,Practical In Theoretical Physics,,"Learning Outcomes:
+Learning Outcomes
+On successful completion of this module the student will be able to
+' carry out a short open-ended research project in all its stages: literature study, data generation and data analysis
+' generate a concise research report
+' participate in group discussion of problem-solving in physics.
+' perform calculations that integrate disparate elements of physics.
+Module Learning Aims:
+Module Content:
+Description:
+This module combines a research project with a component of general problem solving in physics.
+Part I: Problem Solving - 9 tutorials
+Techniques for using physics knowledge to solve general problems will be developed.
+Part II: Project - In the first 9 weeks of Michaelmas term students, working in pairs, carry out a computational or theoretical project in the School of Physics
+Part III: School Seminars - 8 Seminars
+",10
+PY4TP2,Theoretical Physics Project,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PY4TP5,Problem Solving For Theoretical Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PY4VP1,Undergraduate Research Project,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",20
+PY5001,Electronic Structure,Stefano Sanvito,"Learning Outcomes:
+On successful completion of this Module, students will be able to:
+
+ 1. Solve elementary solid state physics problem in the framework of molecular orbital theory adn tight-binding method
+
+2. To relate the tight-binding description of the solid state theory with that provided by the free electron gas with perturbing periodic potential
+
+3. To set up simple model Hamiltonian for describing s and p coordinated electronic structure
+
+4. To develop and understand the foundation of electronic structure theory and to propose simple theory for given material system
+
+5. To master the main physics concept of graphitic materials such as graphene, graphite and carbon nanotubes
+
+ 
+ 
+Module Learning Aims:
+To overview concepts in solid-state physics in the framework of elementary molecular orbital theory for non-interacting electrons.
+
+The course is designed to be appealing also to experimental physics students, who wish to be able to read theoretical work on electronic structure.
+
+The course is at senior undergraduate/junior postgraduate level
+Module Content:
+The module aims at providing foundatoin of solid state theory filling gaps in undergraduate education and allowing Research PhD students to take on research project on solid state theory.
+
+ 
+What Hamiltonian to use: the single particle approximation
+
+Born-Oppenheimer Approximation
+
+Tight-binding method for finite molecules
+
+1D periodic systems: Peierl's Distrortion
+
+2D and 3D systems
+
+Construction of Fermi surface, density of states, locl density of states
+
+Multi-orbital LCAO 
+
+Detailed calculation of the C-graphite ∏ band
+
+C-graphite hybrid orbitals and constructon of the sigma-band
+
+Quantization; C-nanotubes. Free electron model (physical properties)
+
+Nearly free electron model (tight-binding limit)
+
+Surface density of states, Simulation STM images
+
+Hybrid tight-binding-free electron model
+
+ 
+ 
+ 
+
+ 
+",5
+PY5003,Surface Science,Cormac McGuinness,"Learning Outcomes:
+On passing this module the student will be able to
+
+design a vacuum chamber to achieve a desired pressure with appropriate pumping
+
+manipulate the salient features of a surface science chamber
+
+undestand the principles of operation of an XPS spectrometer and LEED apparatus 
+
+select an appropriate method of thin film growth
+
+select an appropriate method of characaterisation of surface structures 
+
+connect this knowledge with modern device technology
+
+
+ 
+Module Learning Aims:
+ 
+
+The broad aim of this module is to prepare the student for work in a surface science laboratory. This divides into three areas. First, the student is introduced to vacuum technology, specifically aimed at ultra-high vacuum (UHV), which underpins surface science.
+
+Secondly, the student is introduced to standard laboratory experimental techniques, such as LEED and XPS, including practical use of these.
+
+Thirdly, the student is introduced to more specialist techniques, such as scanning probe microscopies and the suite of techniques using synchrotron radiation.
+
+Finally, surface optical techniques are also introduced.
+
+ 
+ 
+ 
+Module Content:
+Fundamentals of vacuum; pumping speed; conductance of tubes.
+
+Pressure measurement; Pirani gauge; ion gauge; mass spectra.
+
+Pumps; rotary; diffusion, turbomolecular; titanium sublimation; cryopump; ion getter. Chambers; materials; outgassing; sources of leak; flanges; seals. Fittings; valves; drives; viewports; feedthroughs
+
+Surface structure; Miller indices; Wood’s notation; reciprocal lattice
+
+Low energy electron diffraction (LEED); display apparatus; reflection high energy electron diffraction. Surface sensitive techniques;
+
+X-ray photoelectron spectroscopy (XPS); Auger electron spectroscopy.
+
+Ion techniques; depth profiling; secondary ion mass spectrometry
+
+Energy analysers; retarding field; cylindrical mirror; concentric hemispherical. Scanning probe microscopy; scanning tunneling microscopy; atomic force microscopy. Surface preparation; thermal; etching; cleaving. Thin film growth; evaporation; Knudsen cell; magnetron sputtering. Synchrotron radiation; near edge absorption fine structure, X-ray standing wave; photoelectron diffraction
+
+ 
+Complementary optical probes of surfaces and optical techniques for extracting surface and interface information with a resolution of less than single atomic layer; epioptics; polarized reflection techniques: reflection anisotropy spectroscopy, spectroscopic ellipsometry.
+
+ 
+",5
+PY5005,Bio-Physics,Martin Hegner,"Learning Outcomes:
+On sucessful completion of this module, studetns will be able to:
+
+Achieve an introduction level background in biology
+
+Relate physical concepts to biological problems, in particular to identify experimental techniques suitable to the characterisation of biological materials
+
+Form an opinion on biology problems where physical characterisation techniques may be useful
+
+Read a biophysics research paper
+
+ 
+ 
+ 
+ 
+Module Learning Aims:
+The course is intended for 4th year undergraduate and postgraduate students interested in interdisciplinary science. On the nanoscale traditional disciplinary boundaries are not defined and a general knowledge to link physics/chemistry and biology is required. This class aims at reducing disciplinary boundaries by 'understanding' the language of the other disciplines. The way physicists are approaching a physical experiment is quite different from the one how biologists are planning their research.
+
+ 
+Module Content:
+ 
+
+Biophysics is an interdisciplinary science that uses the methods of physical science to study biological systems. The class will provide a general introduction in biological topics by explaining the biological entities populating individual cells and linking them with state of the art methods which are used for their analysis.
+
+The range of methods is from single molecule tools to whole genome screening techniques (focusing on the physical aspect of the analysis methods).
+
+Molecules of interest: Nucleic acids; proteins; macromolecular complexes; cellular compartments, prokaryotes and eukaryotes.
+
+Laboratory techniques will be introduced which are used to modify biological molecules.Multistep protocols shown on how to create a novel biosensor.
+
+ 
+Analytical diagnostic tools developed in CRANN will be presented (nanomechanical sensors, optical tweezers, scanning probe microscopes)
+
+ 
+",5
+PY5006,Magnetism,J.M.D. Coey,"Learning Outcomes:
+On successful completion of this module, students will be able to:
+
+Recognise the type of magnetic interaction in a given material
+
+Understand the different microscopic theory behind the magnetic interaction
+
+Intepret a magnetic response experiment (SQUID, EPC....) and relate the results to a microscoy theory
+
+Read a research paper in magnetism
+
+Identify and ariculate the role of magnetism in various tehcnological areas, in particular data storage and sensors
+
+ 
+Module Learning Aims:
+To explain the main physical concepts of the magnetic interaction in the solid state and to provide a clear overview of the technology areas magnetism is most relevant to.
+Module Content:
+Introduction: magnetostratics
+
+Magnetism of the elecron;. localised electrons on the atom
+
+Ferromagnetism
+
+ 
+",5
+PY5009,Density Functional Theory,TO BE,"Learning Outcomes:
+After completing this module the students should
+
+have a good understanding of the basics of density functional theory
+
+have an overview over various techniques to solve the Kohn-Sham equations
+
+be able to perform meaningful electronic structure calculations with any typical code package
+
+be able to understand the limitations of the method and to critically judge the validity of published work that uses such calculations
+
+ 
+
+ 
+Module Learning Aims:
+Please see Learning outcomes
+Module Content:
+Introduction to the many-body problem of interacting electrons and nuclei
+
+Theorems of Hohenberg and Kohn
+
+Kohn-Sham equations
+
+Local densisty approximation (LDA)
+
+Pseudopotential approximation
+
+Basis sets: plane waves, augmented functions, local orbitals
+
+Beyond LDA (GGA, exact exchange, SIC, LDA+U, ...)
+
+Applications
+
+
+ 
+",5
+PY5011,Many Body Theory,Charles Patterson,"Learning Outcomes:
+On successful completion of this module, studetns will be able to@
+
+Identify the main concept of many body theory
+
+Identify when a given physical problem needs a beyond mean field approach
+
+Write down a many-body perturbation expansion
+Module Learning Aims:
+To give students a grasp of perturbation theory methods in solid state physics as well as to introduce them to recent applictions of many-body methods in solids
+Module Content:
+Single particle Green's functions, second quantisation, Heisenberg, Schrodinger and interaction pictures in quantum mechanics, many-body Green's functions, equation of motion for the many-body Green's function, Wick's theorem, self energy, dielectric function, screened interaction, GW approximation. Bethe-Salpeter equation and optically excited states. Survey of recent first principles work in GW and Bethe-Salpeter equation methods.
+",5
+PY5012,Introduction To Plasma Physics,Luke Drury,"Learning Outcomes:
+On successful completeion of this module, students will be able to:
+
+Describe basics properites of a plasma (Debye sheilding length, Larmour frequency, etc)
+
+State and discuss the equations of MHD, including the iinduction equation and frozen-flux theorem
+
+Explain basic MHD dynamics, including sound waves and Alfven waves
+
+Discuss implications of plasma physics for shock waves formation (derivation of jump conditions etc,)
+Module Learning Aims:
+To review the theoretical concepts of plasma physics and astrophysics in order to better prepare students for PhD projects in these and related areas.
+Module Content:
+Elements of plasma physics:
+
+Single particle motion
+
+Kinetic plasma theory
+
+Macroscopic fluid approach
+
+Basic Magnetohydrodynamics
+
+MHD equations
+
+Induction equation and frozen-flux theorem
+
+Field lines adn flux tubes
+
+Magnetohydrodynamic waves and shocks
+
+Waves in a uniform plasma
+
+Sound/Alfven/Magnetoacoustic waves
+
+Shock conservation lawas and jump conditions
+
+Astrophpyspical and laboratory examples
+
+Magnetic mirroring and the first adiabatic invaiant
+
+Magnetospheres
+
+Tokamaks
+
+ 
+ 
+",5
+PY5013,Radiative Transfer And Quantitative Spectroscopy,Graham Harper,"Learning Outcomes:
+On successful completion of this module, students should be able to:
+
+1) Apply the concepts of the Principle of Detailed Balance and Thermodynamic Equilibrium.
+
+2) Formulate appropriate rate equations for spectral diagnostics.
+
+3) Solve the non-LTE two-level atom problem both exactly and in approximate form.
+
+4) Identify best practices for solving radiative transfer problems.
+
+5) Locate atomic data resources and public domain radiative transfer codes.
+6) Appraise the use of Escape Probabilities in solving line formation problems
+
+ 
+Module Learning Aims:
+To provide a theoretical and practical foundation for the analysis of astrophysical and laboratory plasma spectra under general non-equilibrium conditions.
+
+To provide best practice guidelines for solving and analysing radiative transfer problems.
+
+To provide an overview how the concepts of atomic physics, statistical equilibrium, and the propagation of radiation can be integrated to analyze spectra in a research context. This is a graduate level course.
+
+ 
+Module Content:
+An appreciation of spectra: emission and absorption, line and continuum.
+
+The Equation of Radiative Transfer
+
+Atomic Processes: collisional and radiative, bound-bound, bound-free, and free-free
+
+Opacity and emissivity: the source function and optical depth.
+
+Local Thermodynamic Equilibrium
+
+Rate (statistical) equilibrium equations, advection
+
+Applications I: optically thin electron density and temperature diagnostics
+
+Source functions: different descriptions of two-level atoms, Equivalent-Two-Level-Atom
+
+Solving the radiative transfer problem: long and short characteristics, Feautrier’s method
+
+Solution to some simple transfer problems: kernel functions, thermalization depths
+
+Numerical techniques I: numerical solutions for absorption spectra
+
+Applications II: escape probabilities, correcting for opacity effects in traditional diagnostics
+
+Advanced topics I: geometry, velocity fields, partial redistribution
+
+Advanced topics II: time dependent solutions for rate equations
+
+Advanced topics III: line formation and the multi-level atom
+
+Numerical techniques II: testing codes and discrete ordinates
+
+ 
+
+ 
+",5
+PY5015,Soft Matter,Matthias Möbius,"Learning Outcomes:
+Be able to analyse and predict flow behaviour for Newtonian and complex fluids.
+
+Interpret basic rheological data for complex fluids
+
+Understand the physics governing colloidal suspensions, foams and emulsions
+
+
+ 
+Module Learning Aims:
+The students will learn key concepts that govern the flow of liquids and complex fluids. Moreover, they will be exposed to current research activity in the field. The concepts and techniques that are developed in the module will benefit students involved in this research area.  
+
+ 
+Module Content:
+The module is taken by postgraduate students and covers topics important to soft matter physics. The focus of the module is on the flow (rheology) of ordinary and complex fluids such as suspensions and foams. The stability of colloidal suspensions and foams is also discussed. The course provides students with a basic knowledge of a field that has applications in a wide variety of research areas, but is not covered in undergraduate syllabi.
+
+ 
+
+Introduction to hydrodynamics: Stress tensor, Euler’s equations, Navier-Stokes Equations, Reynolds number, Stokes flow.
+
+Introduction to rheology: Relaxation time and viscosity, Linear Viscoelasticity, Relaxation spectrum.
+
+Colloidal suspensions: Classification of colloidal suspensions, Stokes-Einstein relation, Stability, DLVO theory, Non-linear rheology of colloidal suspensions .
+
+Foams and emulsions: Properties, Stability, Rheology.
+
+
+ 
+",5
+PY5016,Complex Systems,Stefan Hutzler,"Learning Outcomes:
+On successful completion of this module, students will be able to:
+
+Identify a number of novel applications of physics to problems outside the traditional physics domains
+
+Employ novel tools for data analysis that have recently been developed in statistical physics
+
+Apply analytical and numerical calculations to problems in complexity
+
+ 
+ 
+Module Learning Aims:
+This module will equip postgraduates with key concepts for dealing with complexity and thus enable them to review and examine research literature in this field. The ideas and techniques developed and discussed in this module will beneift students working in a variety of research areas.
+
+ 
+Module Content:
+Examples of Complex Systems
+
+Algorithmic Complexity
+
+Mathematical Preliminaries
+
+Networks
+
+Wealth Distributions
+
+Econophysics
+
+This Module will equip postgraduates with key concepts for dealing with complexity and thus enable them to review and examine research literature in this field. The ideas and techniques developed and discussed in this module will benefit students working in a variety of research areas.
+",5
+PY5017,Nanophotonics I,John Donegan,"Learning Outcomes:
+On successsful completion of this module, students will be able to:
+
+Understand the nature of lower dimensional nanoscale systems, particularly the variation of the density of states
+
+Develop a detailed understanding of the optical properties of quantum wells
+
+Solve simple problems related to lower dimensional systems
+
+Write model Hamiltonians for electromagnetism with nanoscale semiconductior structures; explain how such models originate from Maxwell's equation, the Schrödinger equation, and the bandstructure of semiconductors.
+
+Solve these models for simple cases, such as perfect planar microcavities
+
+Appreciate key effects of quantum confinement in a hybrid matter-light system, including the formation of cavity resonances polaritons, and changes in radiative decay rates.
+
+ 
+Module Learning Aims:
+To overview the fundamental concepts of optical effects in nanoscale systems and coupled light-matter systems, particularly as they apply to semidonductor nanostructures and microcvities
+
+ 
+Module Content:
+Quantum confinement in finite and infinite potentials
+
+Density of states in 3,2,1 and 0 dimensional systems
+
+Semiconductor bandstructures, transitions and selection rules
+
+Optical effects in quantum wells, coupled quantum wells and superlattices
+
+Optical effects in wires and dots
+
+Growth and fabrication of nanostructures
+
+Reflection and refraction at interfaces, transfer matrix methods, distributed Bragg reflectors, microcavities
+
+Solutions of the wave equation in resonant structures
+
+Exciton-polariton spectra, homeogeneious and inhomogeneious linewidths, effects of disorder
+
+Second quantized formalism
+
+Quantization of the electromagnetic field
+
+Theory of two-level atom in an optical cavity: Rabi oscillations, Jaynes-Cummings ladder
+
+Radiative lifetimes and the Purcell effect
+
+Quantum theory of polaritons
+
+Collective effects: lasing, parametric osillation, superradiance, polariton condensation
+
+ 
+ 
+ 
+ 
+",5
+PY5018,Nanophotonics Ii,Louise Bradley,"Learning Outcomes:
+On successful completion of htis module, students will be able to:
+
+Understand the basic concepts of plasmonics
+
+Design plasmonic platforms for passive and active components, with applications such as waveguides and sensing
+
+Solve basic problems using Fourier transforms this in the context of opticl imaging
+
+Develop an understanding of Fourier optics in imaging systems and of applications of novel imaging systems
+
+ 
+Module Learning Aims:
+To provide an introduction into the field of plasmonics, to give an overview of applicatons of Fourier optics in imaging systems and an introduction to novel imaging systems
+
+ 
+Module Content:
+Surface plasmon polaritonspropagating at metal/insulator interfaces
+
+Localised surface plasmons
+
+Plasmon waveguides and cavities
+
+Interactions with emitters and sensing devices
+
+Analysis of two-dimensional linear systems
+
+Fourier transforms and imaging properties of lenses
+
+Novel imaging and applications of Fourier optics in imaging
+
+ 
+ 
+ 
+",5
+PY5021,Magnetic Sensors,J. M,"Learning Outcomes:
+Students will become familiar with the basic concepts in condensed matter physics, elecromagnetism and materials science on which magnetic sensors depend. The significance of sensors, and the wide range of critical applications will be understood. The practical component of the course will allow students to understand how the devices are built, and may suggest new practical appicaitons. Numerical fluency with the physical magnitudes involved in magnetism and noise will be developed, facilitated by the consistent use of SI units, and many numerical examples.
+Module Learning Aims:
+Module Content:
+Introduction, overivew of magnetic sensors, historical background; Principles of magnetic sensing, review of basic concepts, magnetization, B and H-fields, anisotropy, magnetic order, sensor principles, signal/noise; Sensor types, induction sensors, magnetoimpedance sensors, semiconductor sensors, thin film magnetic sensors - anisotropic magnetoresistance, Hall, Giant magnetoresistance, tunnel magnetoresistance, superconducting sensors, resonance sensors, magneto-optic sensors; Sensor applications, proximity sensing, magnetic surveying, magnetic field and electric current measurement, testing, bioassay, magnetic recording; Future prospects, the wired world.
+
+A practical component involving the construction and evaluaton of a GMR sensor is envisged.
+
+ 
+",5
+PY5024,Practical Astrophysical Spectroscopy,Brian Espey,"Learning Outcomes:
+Upon successful completion of this module, students will be able to: 
+
+1) deconstruct a practical problem to identify which diagnostics are appropriate to use (e.g., whether a gas is dominated by collisional or photionisation processes and is of low or high opacity); 
+
+2) be able to construct simple diagnostics, e.g. through the use of a simple three-level atom approach; 
+
+3) to apply their knowledge to the solution of a practical astrophysical problem by either direct analytical solution, or by solving a problem numerically 
+
+ 
+
+ 
+Module Learning Aims:
+The course is intended for graduate students to understand and be able to apply techniques discussed in the course appropriately to derive spectroscopic diagnostics (for example the emission measure, density and temperature) of astrophysical plasmas over a wide range of conditions from warm (~10^4K) to hot (~10^6K). 
+
+ 
+
+ 
+Module Content:
+Lectures + tutorials including problem sets for completion out of class covering some or all of the following:
+
+1) statistical equilibrium in warm and hot plasmas and the dominant ionisation, recombination and emission processes
+
+2) Conditions for: Thermodynamic Equilibrium / Local Thermodynamic Equilibrium (LTE) / non-LTE
+
+3) diagnostics of warm media such as stellar chromospheres and photospheres, with particular application to the Sun
+
+4) diagnostics of hot dilute media, such as solar and stellar coronae
+
+5) diagnostics of warm gas, such as HII regions and planetary and circumstellar nebulae
+
+ 
+
+ 
+",5
+PY7001,Conventional Energy Sources And Technology,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PY7002,Electrical Power Generation And Distribution,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU11E04,1E4 Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU11F10,Foundation Physics For Earth And Life Sciences,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU11F20,Foundation Physics For Earth And Life Sciences,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU11H10,Physics For Health Sciences 1,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU11H20,Physics For Health Sciences 2,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU11P10,Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU11P20,Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU22N20,Modern Physics And Materials,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU22P10,Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU22P20,Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU33A03,Stellar And Galactic Strucure,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33A06,Statistical Thermodynamics And Astrophysical Spectroscopy,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33A07,Experimental Techniques For Astrophysics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33AP1,Practical In Astrophysics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",20
+PYU33C01,Computer Simulation I,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33P01,Quantum Mechanics I,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33P02,Electromagnetic Interactions I,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33P03,Condensed Matter I,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33P04,Condensed Matter Ii,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33P05,Atomic And Nuclear Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33P06,Dynamical Systems,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33P07,Experimental Techniques,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU33PP1,Practical In Physics,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",20
+PYU44A01,"Cosmology, Planetary And Space Science",,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",10
+PYU44A05,Cosmology,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5
+PYU44C01,Computer Simulation Ii,,"Learning Outcomes:
+Module Learning Aims:
+Module Content:
+",5

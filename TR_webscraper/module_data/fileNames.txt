@@ -17,13 +17,9 @@ Computer_Science_and_Statistics.csv
 Engineering.csv
 Genetics_and_Microbiology.csv
 Mathematics.csv
-Multi-School.csv
 Natural_Sciences.csv
 Physics.csv
 Dental_Science.csv
 Medicine.csv
-Multi-School.csv
 Nursing_and_Midwifery.csv
-Pharmacy _and_Pharmaceutical_Sciences.csv
-Innovation_Academy.csv
-Multi-School.csv
+Pharmacy_and_Pharmaceutical_Sciences.csv

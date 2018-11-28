@@ -66,8 +66,17 @@ for link in detailLinks:
         code = data[0].text.strip()
         name = data[1].text.strip().title()
         lecturer = data[6].text
-        removePattern = re.compile('(|^)(dr\.|dr|pr\.|pr|prof.|prof|Assistant|Associate|Lecturer|Professor|mr.|mr|Lecturing staff:|and)( |$)',re.IGNORECASE)
-        lecturer = ' '.join(re.sub(removePattern,'', lecturer).strip().split()[0:2])
+        removePattern = re.compile('(|^)(dr\.|dr|pr\.|pr|prof.|prof|Assistant|Associate|Lecturer|Professor|mr.|mr|Lecturing|staff|and|Lecturer\(s\)|Lecturers|tutorials|Module|Coordinators|owner|Co-ordinator|Teaching|-|/|:)( |$)',re.IGNORECASE)
+        repeat = True
+        oldval = lecturer
+        while(repeat):
+            lecturer = (re.sub(removePattern,'', lecturer)).strip()
+
+            if lecturer == oldval:
+                repeat = False
+            oldval = lecturer
+        lecturer = ' '.join(lecturer.strip().split()[0:2])
+
         whitespace_except_space = string.whitespace.replace(' ', '')
         description = 'Learning Outcomes:\n%s\nModule Learning Aims:\n%s\nModule Content:\n%s\n' % (
             data[7].text.strip(whitespace_except_space), data[8].text.strip(whitespace_except_space), data[9].text.strip(whitespace_except_space))
