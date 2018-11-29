@@ -2,9 +2,11 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import RegistrationForm
-from modules.models import Module
+from modules.models import Module, Module_Comment
 from django.contrib.auth.models import User
 from users.models import Profile
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.views.generic import DeleteView
 
 def register(request):
     if request.method == 'POST':
@@ -31,3 +33,14 @@ def register(request):
 @login_required
 def profile(request):
     return render(request, 'users/profile.html')
+
+class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Module_Comment
+    success_url = '/'
+    template_name = 'users\module_comment_confirm_delete.html'
+
+    def test_func(self):
+        commment = self.get_object()
+        if self.request.user == commment.author:
+            return True
+        return False

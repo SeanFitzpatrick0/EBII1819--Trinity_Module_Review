@@ -1,0 +1,16 @@
+{% extends "home/header.html" %}
+{% block content %}
+    <div class="content-section" style="padding-right:20px; padding-top:30px; padding-bottom: 10px;">
+        <form method="POST" style="padding-bottom:15px;">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Delete Comment</legend>
+                <h4>Are you sure you want to delete the comment "<i>{{ object.content }}</i>" <small>({{ object.date_posted | date:"F d, Y" }})<small></h4>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-danger" type="submit">Yes, Delete</button>
+                <a class="btn btn-outline-secondary" href="{% url 'profile_page' %}">Cancel</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}

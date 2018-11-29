@@ -15,7 +15,10 @@
     <h3>Your comments:</h3>
     <ul>
         {% for comment in user.profile.comments.all %}
-            <li>{{ comment }}</li>
+            <li style="font-size: 15px; margin-right: 100px;" class='list-group-item'>
+                "<i>{{ comment.content }}</i>" <small>({{ comment.date_posted |date:'F d, Y' }})<small>
+                <a class="btn btn-danger btn-sm mt-1 mb-1 float-right" href="{% url 'comment-delete' comment.id %}">Delete</a>
+            </li>
         {% endfor %}
     </ul>
 {% endblock %}
