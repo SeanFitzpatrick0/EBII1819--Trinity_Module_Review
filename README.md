@@ -5,7 +5,7 @@ view live site here: **TODO addlink**
 
 ## What's here
 * The web application is loacted in the **Rate_Trinity** directory.
-* The web scraper is loacted in the **TR_webscraper** directory. See README in this directory for more details.
+* The web scraper is loacted in the **TR_webscraper** directory. See README in this directory for more details
 
 ## Dependencies
 ### You must have Python 3.6 or higher.
