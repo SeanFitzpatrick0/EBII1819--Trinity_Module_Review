@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from users.models import Profile
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import DeleteView
+from django.urls import reverse_lazy
 
 def register(request):
     if request.method == 'POST':
@@ -36,7 +37,7 @@ def profile(request):
 
 class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Module_Comment
-    success_url = '/'
+    success_url = reverse_lazy('profile_page')
     template_name = 'users\module_comment_confirm_delete.html'
 
     def test_func(self):
