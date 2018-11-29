@@ -5,13 +5,37 @@
     <p style = "margin-left: 40px">Please search through our list of modules</p>
     <hr/>
     <ul>
-      <form class="form-inline mt-2 mt-md-0" style = "margin-left: 900px; padding-left:-40px">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        
+      <ul id ="myUL">
+        <div style="margin-right: 100px; padding-bottom:20px;">
+          <input class="form-control" id="myInput" onkeyup="myFunction()" type="text" placeholder="Search for Modules...." aria-label="Search">
+        </div>
+
         {% for module in object_list %}
+          <li>
             <menu style="font-size: 15px; margin-right: 100px;" class="list-group-item"><a href="{{module.code}}/">{{ module.code }} : {{ module.name }}</a></menu>
+          </li>
         {% endfor %}
+      </ul>
     </ul>
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 {% endblock %}
+
+<style>
+</style>
