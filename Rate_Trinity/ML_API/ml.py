@@ -52,27 +52,22 @@ def isAbusiveComment(x):
     if neitherConfidence > 0.7:
         rez = False
 
-    if hateConfidence > 0.4 and offenseConfidence >0.4 :
+    if hateConfidence > 0.6 :
         rez = True
 
-    if hateConfidence > 0.5 and offenseConfidence >0.3 :
-        rez = True
-
-    if hateConfidence > 0.7 :
-        rez = True
-
-    if offenseConfidence >0.3 :
+    if offenseConfidence >0.55 :
         rez = True
 
     return MessageScreenerResult(rez,hateConfidence,offenseConfidence,"No Tips, Sorry!")
 
 if __name__ == "__main__":
-    assert (isAbusiveComment("WHAT A PRICK").getResult()) == True
+    #assert (isAbusiveComment("WHAT A PRICK").getResult()) == True
     assert (isAbusiveComment("cunt").getResult()) == True
+    print(isAbusiveComment("cunt").getHate())
     assert (isAbusiveComment("fuck you").getResult()) == True
     assert (isAbusiveComment("im going to kill you").getResult()) == True
     assert (isAbusiveComment("I dont like this module").getResult()) == False
     assert (isAbusiveComment("this module is bad").getResult()) == False
-    assert (isAbusiveComment("i hate this module").getResult()) == False
+    assert (isAbusiveComment("i really dislike this module").getResult()) == False
     assert (isAbusiveComment("i like this module").getResult()) == False
     print('*** All tests passed ***')
