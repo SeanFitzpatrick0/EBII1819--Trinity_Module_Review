@@ -31,7 +31,9 @@ SECRET_KEY = '6s73i_@a=&x*(&o61zcx6exqh%a!8q7f@0!l1zhqkwr$!6lyup'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ratetrinity.pythonanywhere.com'
+]
 
 
 # Application definition
@@ -130,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/RateTrinity/EBII1819--Trinity_Module_Review/Rate_Trinity/static'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_URL = 'login_page'
 LOGIN_REDIRECT_URL = 'homepage'
