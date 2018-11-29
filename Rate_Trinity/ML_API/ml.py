@@ -63,7 +63,6 @@ def isAbusiveComment(x):
 if __name__ == "__main__":
     #assert (isAbusiveComment("WHAT A PRICK").getResult()) == True
     assert (isAbusiveComment("cunt").getResult()) == True
-    print(isAbusiveComment("cunt").getHate())
     assert (isAbusiveComment("fuck you").getResult()) == True
     assert (isAbusiveComment("im going to kill you").getResult()) == True
     assert (isAbusiveComment("I dont like this module").getResult()) == False

@@ -31,8 +31,8 @@
               <hr>
               {% for comment in comments %}
                 <div>
-                  <h6>{{ comment.content }}</h6>
-                  <p>{{ comment.date_posted | date:"M d, Y"}}</p>
+                  <h5>{{ comment.content }}</h5>
+                  <small>{{ comment.date_posted | date:"M d, Y"}}</small>
                 </div>
               {% endfor %}
             </div>
