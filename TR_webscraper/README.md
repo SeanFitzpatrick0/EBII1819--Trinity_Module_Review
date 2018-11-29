@@ -15,3 +15,6 @@ python web_scraper.py
 You will be nagivated to the Courses & Modules page. From here you must manually click the View Module Descriptive Details link. You will be brought to a search form. From here select a school for the Faculty/School drop down (E.g. Computer Science and Statistics) and click View Modules.
 
 The webscraper will then take over and select all the module details links and then collect all details from these pages.
+
+### Demo
+![](webscraper_demo.gif)
