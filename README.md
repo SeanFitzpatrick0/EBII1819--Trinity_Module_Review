@@ -1,7 +1,7 @@
 # Rate_Trinity
 [EBII] Development Repo for Trinity Module Review Website
 
-view live site here: **TODO addlink**
+view live site here: **http://ratetrinity.pythonanywhere.com/**
 
 ## What's here
 * The web application is loacted in the **Rate_Trinity** directory.
