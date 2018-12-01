@@ -32,7 +32,9 @@ SECRET_KEY = '6s73i_@a=&x*(&o61zcx6exqh%a!8q7f@0!l1zhqkwr$!6lyup'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ratetrinity.pythonanywhere.com'
+    'ratetrinity.pythonanywhere.com',
+    'localhost',
+    '127.0.0.1'
 ]
 
 
